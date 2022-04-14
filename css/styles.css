@@ -108,6 +108,7 @@ button {
   color: var(--brand-color);
 }
 .page-header .contacts {
+  margin-right: 50px;
   color: var(--primay-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -115,13 +116,16 @@ button {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+.page-header .contacts:last-child {
+  margin-right: 0;
+}
 .contacts:hover,
 .contacts:focus {
   color: var(--brand-color);
 }
 .contacts-box {
   display: flex;
-  gap: 50px;
+  /* gap: 50px; */
 }
 
 /* головний */
@@ -201,13 +205,17 @@ button {
 }
 .team-list {
   display: flex;
-  gap: 30px;
+  /* gap: 30px; */
 }
 .team-item {
+  margin-right: 30px;
   /* flex-basis: calc((100% - 90px)/4; */
   width: 270px;
   text-align: center;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.team-item:last-child {
+  margin-right: 0;
 }
 .team-title {
   color: var(--title-text-color);
@@ -271,7 +279,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  /* gap: 8px; */
   margin-bottom: 50px;
 }
 .button-list .button {
@@ -284,6 +292,12 @@ button {
   line-height: 1.62;
   letter-spacing: 0.03em;
 }
+.button-items {
+  margin-right: 8px;
+}
+.button-items:last-child {
+  margin-right: 0;
+}
 .button-list .button:hover,
 .button-list .button:focus {
   color: var(--second-text-color);
@@ -292,7 +306,17 @@ button {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  /* gap: 30px; */
+}
+.projects-list-items {
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+.projects-list-items:nth-child(3n) {
+  margin-right: 0;
+}
+.projects-list-items:nth-child(n + 7) {
+  margin-bottom: 0;
 }
 .projects-list img {
   display: block;
