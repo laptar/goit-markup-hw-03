@@ -267,9 +267,11 @@ button {
 } */
 .address-list .contacts {
   display: block;
-  margin-top: 9px;
   color: var(--address-color);
   text-decoration: none;
+}
+.address-list li {
+  margin-top: 9px;
 }
 .address-list .contacts:hover,
 .address-list .contacts:focus {
